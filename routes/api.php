@@ -11,4 +11,4 @@ use Illuminate\Support\Facades\Route;
 //   Route::post('/todos', [TodoApiController::class, 'store']);
 // });
 
-Route::apiResource('todos', TodoController::class);
+Route::apiResource('todos', TodoController::class)->only(['index', 'show', 'store']);
